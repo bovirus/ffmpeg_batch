@@ -202,6 +202,7 @@ namespace FFBatch
 
         private void wz_end_Initialize(object sender, AeroWizard.WizardPageInitEventArgs e)
         {
+            if (pr_1st_params.Contains("yuv420p")) MessageBox.Show("yuv420p" + " could cause encoding errors.");
         }
 
         private void AeroWizard5_Load(object sender, EventArgs e)
@@ -234,7 +235,7 @@ namespace FFBatch
 
         private void wz0_Commit(object sender, AeroWizard.WizardPageConfirmEventArgs e)
         {
-            String[] v_pixels = new string[] { "yuv444p", "yuyv422", "yuv422p10", "yuv422p10le", "yuv444p10", "yuv444p10le", "yuva444p10", "yuva444p10le", "rgb24", "rgb32", "rgb565", "rgb555", "nv12", "gray", "monow", "monob" };
+            String[] v_pixels = new string[] { "yuv444p", "yuyv422", "yuv422p10", "yuv422p10le", "yuv444p10", "yuv444p10le", "yuva444p10", "yuva444p10le", "rgb24", "rgb32", "rgb565", "rgb555", "nv12", "gray", "monow", "monob" , "yuv420p"};
             foreach (String item in v_pixels)
             {
                 cb_pixel.Items.Add(item);

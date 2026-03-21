@@ -3341,7 +3341,7 @@ namespace FFBatch
             if (Combo_encoders.SelectedIndex == Combo_encoders.FindString("hevc_amf"))
             {
                 video_encoder_param = "-c:v hevc_amf";
-                if (cb_preset.SelectedIndex != -1) hevc_amf_params = " -preset " + cb_preset.SelectedItem.ToString();
+                if (cb_preset.SelectedIndex != -1) hevc_amf_params = " -usage " + cb_preset.SelectedItem.ToString();
                 if (cb_profile.SelectedIndex != -1) hevc_amf_params = hevc_amf_params + " -profile:v " + cb_profile.SelectedItem.ToString();
                 if (cb_level.SelectedIndex != -1) hevc_amf_params = hevc_amf_params + " -level " + cb_level.SelectedItem.ToString();
                 if (cb_tune.SelectedIndex != -1 && cb_tune.SelectedIndex != 0) hevc_amf_params = hevc_amf_params + " -tune " + cb_tune.SelectedItem.ToString();
@@ -3544,9 +3544,9 @@ namespace FFBatch
                         }
                     }
                 }
-
                 video_encoder_param = video_encoder_param + dnxhr_params;
-            }            
+            }
+            MessageBox.Show(video_encoder_param);
         }
 
         private void wz1_Commit(object sender, AeroWizard.WizardPageConfirmEventArgs e)
@@ -3570,10 +3570,12 @@ namespace FFBatch
             if (curr_ff.ToLower().Contains("essential")) 
             {
                 if (Combo_encoders.SelectedItem.ToString().Contains("nvenc") || Combo_encoders.SelectedItem.ToString().Contains("amf"))
+                {
                     MessageBox.Show(Properties.Strings.hw_ff_1 + Environment.NewLine + Environment.NewLine + Properties.Strings.Hw_ff_2, Properties.Strings.information, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
 
-            commit_video_1();
+            //commit_video_1();
         }
 
         private void cb_framerate_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -5184,7 +5186,7 @@ namespace FFBatch
         }
 
         private void wz1_1_Initialize(object sender, AeroWizard.WizardPageInitEventArgs e)
-        {
+        {                        
             video_encoder_param = String.Empty;
             commit_video_1();
         }
