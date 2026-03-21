@@ -77,7 +77,7 @@ namespace FFBatch
                 foreach (Control c in this.Controls) UpdateColorDark(c);
                 this.BackColor = Color.FromArgb(255, 64, 64, 64);
             }
-            foreach (Control ct in this.Controls) ct.AccessibleDescription = ct.Text;
+            foreach (Control ct in this.Controls) ct.AccessibleDescription = ct.Text;            
         }
 
         private void refresh_lang()
@@ -95,6 +95,14 @@ namespace FFBatch
             foreach (Control control in ctrl.Controls)
                 RefreshResources(control, res); // recursion
             ctrl.ResumeLayout(false);
+        }
+
+        private void numericUpDown1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar.Equals('.') || e.KeyChar.Equals(','))
+            {
+                e.KeyChar = ((System.Globalization.CultureInfo)System.Globalization.CultureInfo.CurrentCulture).NumberFormat.NumberDecimalSeparator.ToCharArray()[0];
+            }
         }
     }
 }

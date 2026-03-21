@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 40</value>
+    <value>25, 90</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 13</value>
@@ -128,7 +128,7 @@
     <value>Czas wyświetlania obrazów:</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 40</value>
+    <value>211, 90</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 13</value>
@@ -137,10 +137,19 @@
     <value>sekund</value>
   </data>
   <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>139, 38</value>
+    <value>161, 88</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>316, 178</value>
+  </data>
+  <data name="btn_cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>397, 178</value>
   </data>
   <data name="btn_cancel.Text" xml:space="preserve">
     <value>Anuluj</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>261, 90</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 13</value>
@@ -149,7 +158,7 @@
     <value>(Brak info o podstępie podczas kodowania)</value>
   </data>
   <data name="chk_audio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 78</value>
+    <value>19, 136</value>
   </data>
   <data name="chk_audio.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 17</value>
@@ -157,8 +166,32 @@
   <data name="chk_audio.Text" xml:space="preserve">
     <value>Dodaj ścieżkę audio</value>
   </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>398, 132</value>
+  </data>
   <data name="button3.Text" xml:space="preserve">
     <value>Przeglądaj</value>
+  </data>
+  <data name="txt_audio_path.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 134</value>
+  </data>
+  <data name="txt_audio_path.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 20</value>
+  </data>
+  <data name="txt_par.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 24</value>
+  </data>
+  <data name="lbl_par.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 27</value>
+  </data>
+  <data name="lbl_par.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="lbl_par.Text" xml:space="preserve">
+    <value>Parametry</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>490, 213</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

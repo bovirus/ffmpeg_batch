@@ -40,6 +40,8 @@ namespace FFBatch
             this.button3 = new System.Windows.Forms.Button();
             this.txt_audio_path = new System.Windows.Forms.TextBox();
             this.openf = new System.Windows.Forms.OpenFileDialog();
+            this.txt_par = new System.Windows.Forms.TextBox();
+            this.lbl_par = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,12 +58,19 @@ namespace FFBatch
             // numericUpDown1
             // 
             resources.ApplyResources(this.numericUpDown1, "numericUpDown1");
+            this.numericUpDown1.DecimalPlaces = 2;
+            this.numericUpDown1.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Value = new decimal(new int[] {
-            5,
+            1,
             0,
             0,
             0});
+            this.numericUpDown1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numericUpDown1_KeyPress);
             // 
             // button1
             // 
@@ -109,12 +118,24 @@ namespace FFBatch
             resources.ApplyResources(this.openf, "openf");
             this.openf.FileOk += new System.ComponentModel.CancelEventHandler(this.openf_FileOk);
             // 
+            // txt_par
+            // 
+            resources.ApplyResources(this.txt_par, "txt_par");
+            this.txt_par.Name = "txt_par";
+            // 
+            // lbl_par
+            // 
+            resources.ApplyResources(this.lbl_par, "lbl_par");
+            this.lbl_par.Name = "lbl_par";
+            // 
             // Form18
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.CancelButton = this.btn_cancel;
+            this.Controls.Add(this.lbl_par);
+            this.Controls.Add(this.txt_par);
             this.Controls.Add(this.txt_audio_path);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.chk_audio);
@@ -146,5 +167,7 @@ namespace FFBatch
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.OpenFileDialog openf;
         public System.Windows.Forms.TextBox txt_audio_path;
+        public System.Windows.Forms.TextBox txt_par;
+        private System.Windows.Forms.Label lbl_par;
     }
 }

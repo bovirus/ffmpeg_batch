@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 40</value>
+    <value>37, 131</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 13</value>
@@ -146,7 +146,7 @@
     <value>(编码时无进度信息)</value>
   </data>
   <data name="chk_audio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 78</value>
+    <value>48, 83</value>
   </data>
   <data name="chk_audio.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 17</value>
@@ -156,6 +156,18 @@
   </data>
   <data name="button3.Text" xml:space="preserve">
     <value>浏览</value>
+  </data>
+  <data name="lbl_par.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 32</value>
+  </data>
+  <data name="lbl_par.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="lbl_par.Text" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>472, 216</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

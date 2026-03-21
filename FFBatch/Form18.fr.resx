@@ -125,7 +125,7 @@
     <value>Durée entre les images</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>191, 40</value>
+    <value>189, 84</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 13</value>
@@ -134,16 +134,16 @@
     <value>secondes</value>
   </data>
   <data name="numericUpDown1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>143, 38</value>
+    <value>139, 82</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>345, 126</value>
+    <value>349, 158</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Accepter</value>
   </data>
   <data name="btn_cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 126</value>
+    <value>430, 158</value>
   </data>
   <data name="btn_cancel.Text" xml:space="preserve">
     <value>Annuler</value>
@@ -161,16 +161,22 @@
     <value>Ajouter du son</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 72</value>
+    <value>430, 125</value>
   </data>
   <data name="button3.Text" xml:space="preserve">
     <value>Parcourir...</value>
   </data>
   <data name="txt_audio_path.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 20</value>
+    <value>297, 20</value>
+  </data>
+  <data name="txt_par.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 20</value>
+  </data>
+  <data name="lbl_par.Text" xml:space="preserve">
+    <value>Paramètres</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>511, 154</value>
+    <value>511, 193</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
