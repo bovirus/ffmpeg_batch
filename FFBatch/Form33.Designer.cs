@@ -110,18 +110,19 @@
             // 
             // tab_s
             // 
+            resources.ApplyResources(this.tab_s, "tab_s");
             this.tab_s.Controls.Add(this.tab_all);
             this.tab_s.Controls.Add(this.tab_video);
             this.tab_s.Controls.Add(this.tab_audio);
             this.tab_s.Controls.Add(this.tab_subs);
             this.tab_s.HotTrack = true;
-            resources.ApplyResources(this.tab_s, "tab_s");
             this.tab_s.Name = "tab_s";
             this.tab_s.SelectedIndex = 0;
             this.tab_s.SelectedIndexChanged += new System.EventHandler(this.tab_s_SelectedIndexChanged);
             // 
             // tab_all
             // 
+            resources.ApplyResources(this.tab_all, "tab_all");
             this.tab_all.Controls.Add(this.chk_n9);
             this.tab_all.Controls.Add(this.chk_n8);
             this.tab_all.Controls.Add(this.chk_n7);
@@ -133,7 +134,6 @@
             this.tab_all.Controls.Add(this.chk_n1);
             this.tab_all.Controls.Add(this.chk_n0);
             this.tab_all.Controls.Add(this.chk_all);
-            resources.ApplyResources(this.tab_all, "tab_all");
             this.tab_all.Name = "tab_all";
             this.tab_all.UseVisualStyleBackColor = true;
             // 
@@ -199,12 +199,12 @@
             // 
             // tab_video
             // 
+            resources.ApplyResources(this.tab_video, "tab_video");
             this.tab_video.Controls.Add(this.pic_vid);
             this.tab_video.Controls.Add(this.chk_v_3);
             this.tab_video.Controls.Add(this.chk_v_2);
             this.tab_video.Controls.Add(this.chk_v_1);
             this.tab_video.Controls.Add(this.chk_all_v);
-            resources.ApplyResources(this.tab_video, "tab_video");
             this.tab_video.Name = "tab_video";
             this.tab_video.UseVisualStyleBackColor = true;
             // 
@@ -241,6 +241,7 @@
             // 
             // tab_audio
             // 
+            resources.ApplyResources(this.tab_audio, "tab_audio");
             this.tab_audio.Controls.Add(this.rad_def_aud3);
             this.tab_audio.Controls.Add(this.rad_def_aud2);
             this.tab_audio.Controls.Add(this.rad_def_aud1);
@@ -249,7 +250,6 @@
             this.tab_audio.Controls.Add(this.chk_a_2);
             this.tab_audio.Controls.Add(this.chk_a_1);
             this.tab_audio.Controls.Add(this.chk_all_a);
-            resources.ApplyResources(this.tab_audio, "tab_audio");
             this.tab_audio.Name = "tab_audio";
             this.tab_audio.UseVisualStyleBackColor = true;
             // 
@@ -310,6 +310,7 @@
             // 
             // tab_subs
             // 
+            resources.ApplyResources(this.tab_subs, "tab_subs");
             this.tab_subs.Controls.Add(this.pic_f);
             this.tab_subs.Controls.Add(this.lbl_f);
             this.tab_subs.Controls.Add(this.rad_def_sub10);
@@ -334,7 +335,6 @@
             this.tab_subs.Controls.Add(this.chk_s_2);
             this.tab_subs.Controls.Add(this.chk_s_1);
             this.tab_subs.Controls.Add(this.chk_all_s);
-            resources.ApplyResources(this.tab_subs, "tab_subs");
             this.tab_subs.Name = "tab_subs";
             this.tab_subs.UseVisualStyleBackColor = true;
             // 
@@ -521,17 +521,17 @@
             // 
             // btn_ok
             // 
-            this.btn_ok.BackColor = System.Drawing.SystemColors.InactiveBorder;
             resources.ApplyResources(this.btn_ok, "btn_ok");
+            this.btn_ok.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btn_ok.Name = "btn_ok";
             this.btn_ok.UseVisualStyleBackColor = false;
             this.btn_ok.Click += new System.EventHandler(this.btn_ok_Click);
             // 
             // btn_cancel
             // 
+            resources.ApplyResources(this.btn_cancel, "btn_cancel");
             this.btn_cancel.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btn_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            resources.ApplyResources(this.btn_cancel, "btn_cancel");
             this.btn_cancel.Name = "btn_cancel";
             this.btn_cancel.UseVisualStyleBackColor = false;
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -543,8 +543,8 @@
             // 
             // btn_clear
             // 
-            this.btn_clear.BackColor = System.Drawing.SystemColors.InactiveBorder;
             resources.ApplyResources(this.btn_clear, "btn_clear");
+            this.btn_clear.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btn_clear.Name = "btn_clear";
             this.btn_clear.UseVisualStyleBackColor = false;
             this.btn_clear.Click += new System.EventHandler(this.btn_clear_Click);
