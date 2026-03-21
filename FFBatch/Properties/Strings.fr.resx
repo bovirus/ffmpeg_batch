@@ -363,9 +363,6 @@
   <data name="avoid_overw" xml:space="preserve">
     <value>pour éviter d'éventuels écrasements.</value>
   </data>
-  <data name="avoid_overw1" xml:space="preserve">
-    <value>pour éviter d'éventuels écrasements.</value>
-  </data>
   <data name="AV_split_wizard" xml:space="preserve">
     <value>A/V_split_wizard</value>
   </data>
@@ -382,9 +379,6 @@
     <value>Sauvegarde chargée</value>
   </data>
   <data name="batch_concat_msg" xml:space="preserve">
-    <value>La concaténation par lots est activée, mais aucun fichier initial ou final n'a été sélectionné. Veuillez en choisir un ou désactiver ce paramètre.</value>
-  </data>
-  <data name="batch_concat_msg1" xml:space="preserve">
     <value>La concaténation par lots est activée, mais aucun fichier initial ou final n'a été sélectionné. Veuillez en choisir un ou désactiver ce paramètre.</value>
   </data>
   <data name="batch_mux" xml:space="preserve">
@@ -576,9 +570,6 @@
   <data name="concat_vid_help" xml:space="preserve">
     <value>Ce filtre permet de joindre des vidéos de qualités différentes, il améliore la compatibilité mais il nécessite un ré-encodage de l'audio et de la vidéo. Le champ des paramètres peut être laissé vide REMARQUE : Seuls les fichiers vidéo sont autorisés.</value>
   </data>
-  <data name="concat_vid_help1" xml:space="preserve">
-    <value>Ce filtre permet de joindre des vidéos de qualités différentes, il améliore la compatibilité mais il nécessite un ré-encodage de l'audio et de la vidéo. Le champ des paramètres peut être laissé vide REMARQUE : Seuls les fichiers vidéo sont autorisés.</value>
-  </data>
   <data name="conc_comp" xml:space="preserve">
     <value>Concaténation terminée</value>
   </data>
@@ -700,9 +691,6 @@
     <value>Supprimer le préréglage actuel</value>
   </data>
   <data name="demuxer_help" xml:space="preserve">
-    <value>Dans ce mode, les fichiers audio/vidéo peuvent être copiés en flux, à condition qu'ils partagent des qualités (taille, codec, débit binaire). REMARQUE : tous les conteneurs ne sont pas pris en charge pour la copie en flux. Si des problèmes de lecture surviennent ou si les fichiers ne sont pas joints, un réencodage peut être effectué. requis.</value>
-  </data>
-  <data name="demuxer_help1" xml:space="preserve">
     <value>Dans ce mode, les fichiers audio/vidéo peuvent être copiés en flux, à condition qu'ils partagent des qualités (taille, codec, débit binaire). REMARQUE : tous les conteneurs ne sont pas pris en charge pour la copie en flux. Si des problèmes de lecture surviennent ou si les fichiers ne sont pas joints, un réencodage peut être effectué. requis.</value>
   </data>
   <data name="dest_err" xml:space="preserve">
@@ -1103,18 +1091,6 @@
   </data>
   <data name="fail_2ndp" xml:space="preserve">
     <value>Le test d'encodage a échoué sur les paramètres du deuxième passage :</value>
-  </data>
-  <data name="ffp_del" xml:space="preserve">
-    <value>Le fichier exécutable FFprobe a été supprimé. L'application ne fonctionnera pas.</value>
-  </data>
-  <data name="ffp_not" xml:space="preserve">
-    <value>Le fichier sélectionné n’est pas ffprobe.exe.</value>
-  </data>
-  <data name="ffp_not_f" xml:space="preserve">
-    <value>FFprobe.exe n'a pas été trouvé dans le chemin de l'application. Voulez-vous le trouver et le copier dans le dossier de l'application ?</value>
-  </data>
-  <data name="ffp_ren" xml:space="preserve">
-    <value>Le fichier exécutable FFprobe a été renommé. L'application ne fonctionnera pas.</value>
   </data>
   <data name="ffs" xml:space="preserve">
     <value>Les processus FFmpeg étaient en cours d'exécution et détectés.</value>
@@ -1746,9 +1722,6 @@
   <data name="mux_abort" xml:space="preserve">
     <value>Multiplexage interrompu</value>
   </data>
-  <data name="mux_abort1" xml:space="preserve">
-    <value>Multiplexage interrompu.</value>
-  </data>
   <data name="mux_Err1" xml:space="preserve">
     <value>Erreur lors du multiplexage de l'audio avec l'image</value>
   </data>
@@ -1908,14 +1881,8 @@
   <data name="no_concat_ef" xml:space="preserve">
     <value>Aucun fichier initial ou final</value>
   </data>
-  <data name="no_concat_ef1" xml:space="preserve">
-    <value>Aucun fichier initial ou final</value>
-  </data>
   <data name="no_ffmpeg" xml:space="preserve">
     <value>Le fichier exécutable FFmpeg est introuvable. Redémarrez ou réinstallez l'application.</value>
-  </data>
-  <data name="no_ffprobe" xml:space="preserve">
-    <value>Le fichier exécutable FFprobe est introuvable. Redémarrez ou réinstallez l'application.</value>
   </data>
   <data name="no_file" xml:space="preserve">
     <value>Aucun fichier sélectionné</value>
@@ -3573,15 +3540,6 @@
   <data name="yt_url_sh" xml:space="preserve">
     <value>L'URL YouTube est trop courte.</value>
   </data>
-  <data name="mon_ing1" xml:space="preserve">
-    <value>Dossier de surveillance</value>
-  </data>
-  <data name="Paste_any_URL1" xml:space="preserve">
-    <value>Coller le lien internet</value>
-  </data>
-  <data name="path_iparam1" xml:space="preserve">
-    <value>Ajouter un fichier d'entrée aux paramètres</value>
-  </data>
   <data name="try_d_again" xml:space="preserve">
     <value>Vous pouvez réessayer ou télécharger et copier le fichier dans le chemin de l'application.</value>
   </data>
@@ -3680,5 +3638,11 @@
   </data>
   <data name="end_of" xml:space="preserve">
     <value />
+  </data>
+  <data name="down_deno" xml:space="preserve">
+    <value>Remarque : Deno.exe est nécessaire pour télécharger certains liens YouTube. Veuillez le télécharger dans le dossier de l’application afin d’éviter les erreurs de téléchargement.</value>
+  </data>
+  <data name="members_only1" xml:space="preserve">
+    <value>Les vidéos réservées aux membres nécessitent des informations de session. Veuillez sélectionner un navigateur autorisant les cookies de session.</value>
   </data>
 </root>

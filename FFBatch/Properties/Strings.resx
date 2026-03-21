@@ -363,9 +363,6 @@
   <data name="avoid_overw" xml:space="preserve">
     <value>to avoid possible overwritings.</value>
   </data>
-  <data name="avoid_overw1" xml:space="preserve">
-    <value>to avoid opossible overwritings.</value>
-  </data>
   <data name="AV_split_wizard" xml:space="preserve">
     <value>A/V_split_wizard</value>
   </data>
@@ -382,9 +379,6 @@
     <value>Backup loaded</value>
   </data>
   <data name="batch_concat_msg" xml:space="preserve">
-    <value>Batch concatenation is enabled, but no initial or end files were selected. Please choose either one of them or disable this setting.</value>
-  </data>
-  <data name="batch_concat_msg1" xml:space="preserve">
     <value>Batch concatenation is enabled, but no initial or end files were selected. Please choose either one of them or disable this setting.</value>
   </data>
   <data name="batch_mux" xml:space="preserve">
@@ -502,7 +496,7 @@
     <value>Check for updates</value>
   </data>
   <data name="check_log" xml:space="preserve">
-    <value>You can check log file on main tab for more error information.</value>
+    <value>You can check log file for more error information.</value>
   </data>
   <data name="check_not_st" xml:space="preserve">
     <value>FFmpeg.exe MD5 checksum is not stored yet.</value>
@@ -574,9 +568,6 @@
     <value>Switch between concat muxer and video filter muxer.</value>
   </data>
   <data name="concat_vid_help" xml:space="preserve">
-    <value>This filter allows to join videos with different qualities, it improves compatibility but it requires audio and video to be re-encoded. Parameters field can be left blank. NOTE: Only video files allowed.</value>
-  </data>
-  <data name="concat_vid_help1" xml:space="preserve">
     <value>This filter allows to join videos with different qualities, it improves compatibility but it requires audio and video to be re-encoded. Parameters field can be left blank. NOTE: Only video files allowed.</value>
   </data>
   <data name="conc_comp" xml:space="preserve">
@@ -700,9 +691,6 @@
     <value>Remove current preset</value>
   </data>
   <data name="demuxer_help" xml:space="preserve">
-    <value>In this mode audio/video files can be stream copied, provided they share qualities (size, codec, bitrate). NOTE: Not all containers are supported for stream copy. If playback issues occur or files are not joined, re-encoding may be required.</value>
-  </data>
-  <data name="demuxer_help1" xml:space="preserve">
     <value>In this mode audio/video files can be stream copied, provided they share qualities (size, codec, bitrate). NOTE: Not all containers are supported for stream copy. If playback issues occur or files are not joined, re-encoding may be required.</value>
   </data>
   <data name="dest_err" xml:space="preserve">
@@ -1103,18 +1091,6 @@
   </data>
   <data name="fail_2ndp" xml:space="preserve">
     <value>Encoding test failed on second pass parameters:</value>
-  </data>
-  <data name="ffp_del" xml:space="preserve">
-    <value>FFprobe executable file was deleted. Application will not work.</value>
-  </data>
-  <data name="ffp_not" xml:space="preserve">
-    <value>Selected file is not ffprobe.exe.</value>
-  </data>
-  <data name="ffp_not_f" xml:space="preserve">
-    <value>FFprobe.exe was not found in application path. Do you want to find it and copy it to application folder?</value>
-  </data>
-  <data name="ffp_ren" xml:space="preserve">
-    <value>FFprobe executable file was renamed. Application will not work.</value>
   </data>
   <data name="ffs" xml:space="preserve">
     <value>FFmpeg processes running were detected.</value>
@@ -1746,9 +1722,6 @@
   <data name="mux_abort" xml:space="preserve">
     <value>Multiplexing aborted</value>
   </data>
-  <data name="mux_abort1" xml:space="preserve">
-    <value>Multiplexing aborted.</value>
-  </data>
   <data name="mux_Err1" xml:space="preserve">
     <value>Error muxing audio with image</value>
   </data>
@@ -1908,20 +1881,14 @@
   <data name="no_concat_ef" xml:space="preserve">
     <value>No initial or end files</value>
   </data>
-  <data name="no_concat_ef1" xml:space="preserve">
-    <value>No initial or end files</value>
-  </data>
   <data name="no_ffmpeg" xml:space="preserve">
     <value>FFmpeg executable file was not found. Browse or download it.</value>
-  </data>
-  <data name="no_ffprobe" xml:space="preserve">
-    <value>FFprobe executable file was not found. Restart or reinstall application.</value>
   </data>
   <data name="no_file" xml:space="preserve">
     <value>No file selected</value>
   </data>
   <data name="no_files" xml:space="preserve">
-    <value>Sin ficheros</value>
+    <value>No files</value>
   </data>
   <data name="no_file_str" xml:space="preserve">
     <value>No file selected to add available streams.</value>
@@ -2416,7 +2383,7 @@
     <value>Pre-input seeking exceeds duration of file.</value>
   </data>
   <data name="pre_input4" xml:space="preserve">
-    <value>"Pre-input seeking selected in Batch processing tab is incorrect. Change it or reset it by double-clicking on it"</value>
+    <value>Pre-input seeking selected in Batch processing tab is incorrect. Change it or reset it by double-clicking on it</value>
   </data>
   <data name="pre_in_path" xml:space="preserve">
     <value>An error occurred while saving pre-input configuration. Please ensure you have path access rights .</value>
@@ -3272,7 +3239,6 @@
   </data>
   <data name="two_tip2" xml:space="preserve">
     <value>FIRST PASS:</value>
-    <comment>2</comment>
   </data>
   <data name="two_tip3" xml:space="preserve">
     <value>- Do not include mapping (-map).</value>
@@ -3574,15 +3540,6 @@
   <data name="yt_url_sh" xml:space="preserve">
     <value>YouTube URL is too short.</value>
   </data>
-  <data name="mon_ing1" xml:space="preserve">
-    <value>Monitoring folder</value>
-  </data>
-  <data name="Paste_any_URL1" xml:space="preserve">
-    <value>Paste internet link</value>
-  </data>
-  <data name="path_iparam1" xml:space="preserve">
-    <value>Add input file to parameters</value>
-  </data>
   <data name="try_d_again" xml:space="preserve">
     <value>You can try again or download and copy the file to the application path.</value>
   </data>
@@ -3611,7 +3568,7 @@
     <value>Image cover for MP4 (png)</value>
   </data>
   <data name="cover_mkv" xml:space="preserve">
-    <value>Image cover</value>
+    <value>Cover image</value>
   </data>
   <data name="attach_ttf" xml:space="preserve">
     <value>TrueType font</value>
@@ -3681,5 +3638,11 @@
   </data>
   <data name="end_of" xml:space="preserve">
     <value>End of</value>
+  </data>
+  <data name="down_deno" xml:space="preserve">
+    <value>Warning: Deno.exe is required for downloading some YouTube videos. Please copy it at application folder if you experience compatibility issues. </value>
+  </data>
+  <data name="members_only1" xml:space="preserve">
+    <value>Videos for members only require session information. Please select a session cookies browser.</value>
   </data>
 </root>

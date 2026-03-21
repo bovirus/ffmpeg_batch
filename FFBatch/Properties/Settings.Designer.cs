@@ -564,5 +564,17 @@ namespace FFBatch.Properties {
                 this["first_run"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string yt_cust_p {
+            get {
+                return ((string)(this["yt_cust_p"]));
+            }
+            set {
+                this["yt_cust_p"] = value;
+            }
+        }
     }
 }

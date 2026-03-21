@@ -363,9 +363,6 @@
   <data name="avoid_overw" xml:space="preserve">
     <value>لتجنب إمكانية الكتابة فوقها.</value>
   </data>
-  <data name="avoid_overw1" xml:space="preserve">
-    <value>لتجنب إمكانية الكتابة فوقها.</value>
-  </data>
   <data name="AV_split_wizard" xml:space="preserve">
     <value>A / V_split_wizard</value>
   </data>
@@ -382,9 +379,6 @@
     <value>تم تحميل النسخ الاحتياطي</value>
   </data>
   <data name="batch_concat_msg" xml:space="preserve">
-    <value>تم تمكين تسلسل الدُفعات ، لكن لم يتم تحديد ملفات أولية أو ملفات نهائية. الرجاء اختيار أحدهما أو تعطيل هذا الإعداد.</value>
-  </data>
-  <data name="batch_concat_msg1" xml:space="preserve">
     <value>تم تمكين تسلسل الدُفعات ، لكن لم يتم تحديد ملفات أولية أو ملفات نهائية. الرجاء اختيار أحدهما أو تعطيل هذا الإعداد.</value>
   </data>
   <data name="batch_mux" xml:space="preserve">
@@ -576,9 +570,6 @@
   <data name="concat_vid_help" xml:space="preserve">
     <value>يسمح هذا الفلتر بضم مقاطع الفيديو ذات الصفات المختلفة ، ويحسن التوافق ولكنه يتطلب إعادة تشفير الصوت والفيديو. يمكن ترك حقل المعلمات فارغًا. ملاحظة: يسمح فقط بملفات الفيديو.</value>
   </data>
-  <data name="concat_vid_help1" xml:space="preserve">
-    <value>يسمح هذا الفلتر بضم مقاطع الفيديو ذات الصفات المختلفة ، ويحسن التوافق ولكنه يتطلب إعادة تشفير الصوت والفيديو. يمكن ترك حقل المعلمات فارغًا. ملاحظة: يسمح فقط بملفات الفيديو.</value>
-  </data>
   <data name="conc_comp" xml:space="preserve">
     <value>تم الانتهاء من التسلسل</value>
   </data>
@@ -700,9 +691,6 @@
     <value>قم بإزالة الإعداد المسبق الحالي</value>
   </data>
   <data name="demuxer_help" xml:space="preserve">
-    <value>في هذا الوضع ، يمكن نسخ ملفات الصوت / الفيديو ، بشرط أن تشترك في الصفات (الحجم ، الترميز ، معدل البت). ملاحظة: لا يتم دعم جميع الحاويات لنسخ الدفق. إذا حدثت مشكلات في التشغيل أو لم يتم ضم الملفات ، فقد يلزم إعادة الترميز.</value>
-  </data>
-  <data name="demuxer_help1" xml:space="preserve">
     <value>في هذا الوضع ، يمكن نسخ ملفات الصوت / الفيديو ، بشرط أن تشترك في الصفات (الحجم ، الترميز ، معدل البت). ملاحظة: لا يتم دعم جميع الحاويات لنسخ الدفق. إذا حدثت مشكلات في التشغيل أو لم يتم ضم الملفات ، فقد يلزم إعادة الترميز.</value>
   </data>
   <data name="dest_err" xml:space="preserve">
@@ -1103,18 +1091,6 @@
   </data>
   <data name="fail_2ndp" xml:space="preserve">
     <value>فشل اختبار الترميز في معاملات المرور الثانية:</value>
-  </data>
-  <data name="ffp_del" xml:space="preserve">
-    <value>تم حذف الملف القابل للتنفيذ FFprobe. التطبيق لن يعمل.</value>
-  </data>
-  <data name="ffp_not" xml:space="preserve">
-    <value>الملف المحدد ليس ffprobe.exe.</value>
-  </data>
-  <data name="ffp_not_f" xml:space="preserve">
-    <value>لم يتم العثور على FFprobe.exe في مسار التطبيق. هل تريد العثور عليه ونسخه إلى مجلد التطبيق؟</value>
-  </data>
-  <data name="ffp_ren" xml:space="preserve">
-    <value>تمت إعادة تسمية الملف القابل للتنفيذ FFprobe. التطبيق لن يعمل.</value>
   </data>
   <data name="ffs" xml:space="preserve">
     <value>تم الكشف عن عمليات FFmpeg قيد التشغيل.</value>
@@ -1746,9 +1722,6 @@
   <data name="mux_abort" xml:space="preserve">
     <value>تم إحباط مضاعفة الإرسال</value>
   </data>
-  <data name="mux_abort1" xml:space="preserve">
-    <value>تم إحباط مضاعفة الإرسال.</value>
-  </data>
   <data name="mux_Err1" xml:space="preserve">
     <value>خطأ في إرسال الصوت مع الصورة</value>
   </data>
@@ -1908,14 +1881,8 @@
   <data name="no_concat_ef" xml:space="preserve">
     <value>لا توجد ملفات أولية أو ملفات نهائية</value>
   </data>
-  <data name="no_concat_ef1" xml:space="preserve">
-    <value>لا توجد ملفات أولية أو ملفات نهائية</value>
-  </data>
   <data name="no_ffmpeg" xml:space="preserve">
     <value>لم يتم العثور على ملف FFmpeg القابل للتنفيذ. أعد تشغيل التطبيق أو أعد تثبيته.</value>
-  </data>
-  <data name="no_ffprobe" xml:space="preserve">
-    <value>لم يتم العثور على ملف FFprobe القابل للتنفيذ. أعد تشغيل التطبيق أو أعد تثبيته.</value>
   </data>
   <data name="no_file" xml:space="preserve">
     <value>لم يتم اختيار اي ملف</value>
@@ -3574,15 +3541,6 @@
   <data name="yt_url_sh" xml:space="preserve">
     <value>عنوان URL لموقع YouTube قصير جدًا.</value>
   </data>
-  <data name="mon_ing1" xml:space="preserve">
-    <value>مراقبة المجلد</value>
-  </data>
-  <data name="Paste_any_URL1" xml:space="preserve">
-    <value>مدمج</value>
-  </data>
-  <data name="path_iparam1" xml:space="preserve">
-    <value>إضافة ملف الإدخال إلى المعلمات</value>
-  </data>
   <data name="try_d_again" xml:space="preserve">
     <value>يمكنك المحاولة مرة أخرى أو تنزيل الملف ونسخه إلى موقع التطبيق.</value>
   </data>
@@ -3603,6 +3561,9 @@
   </data>
   <data name="use_prev" xml:space="preserve">
     <value>استخدم معاينة الفيديو</value>
+  </data>
+  <data name="mkv_attach" xml:space="preserve">
+    <value>مرفقات MKV</value>
   </data>
   <data name="attach_png_mp4" xml:space="preserve">
     <value>غلاف الصورة لملف MP4 (png)</value>
@@ -3678,5 +3639,11 @@
   </data>
   <data name="end_of" xml:space="preserve">
     <value />
+  </data>
+  <data name="down_deno" xml:space="preserve">
+    <value>ملاحظة: يتطلب تنزيل بعض روابط يوتيوب وجود برنامج Deno.exe. يرجى تنزيله في مجلد التطبيقات لتجنب أخطاء التنزيل.</value>
+  </data>
+  <data name="members_only1" xml:space="preserve">
+    <value>مقاطع الفيديو المخصصة للأعضاء فقط تتطلب معلومات الجلسة. يرجى اختيار متصفح ملفات تعريف الارتباط للجلسة.</value>
   </data>
 </root>

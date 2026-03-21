@@ -363,9 +363,6 @@
   <data name="avoid_overw" xml:space="preserve">
     <value>para evitar posibles sobreescrituras.</value>
   </data>
-  <data name="avoid_overw1" xml:space="preserve">
-    <value>para evitar posibles sobrescrituras.</value>
-  </data>
   <data name="AV_split_wizard" xml:space="preserve">
     <value>Asistente de partición de ficheros multimedia</value>
   </data>
@@ -383,9 +380,6 @@
   </data>
   <data name="batch_concat_msg" xml:space="preserve">
     <value>La concatenación por lotes está activada, pero no se añadió un fichero de inicio o final. Por favor, seleccione alguno de ellos, o desactive esta opcion.</value>
-  </data>
-  <data name="batch_concat_msg1" xml:space="preserve">
-    <value>La concatenación por lotes está activada, pero no se añadió fichero de inicio y/o final. Por favor, añada uno o desactive esta opción.</value>
   </data>
   <data name="batch_mux" xml:space="preserve">
     <value>FFmpeg Batch - Tareas de multiplexado completadas con éxito</value>
@@ -502,7 +496,7 @@
     <value>Buscar actualizaciones</value>
   </data>
   <data name="check_log" xml:space="preserve">
-    <value>Puede revisar el archivo de registro en la pestaña principal para obtener más información sobre el error.</value>
+    <value>Puede revisar el archivo de registro para obtener más información sobre el error.</value>
   </data>
   <data name="check_not_st" xml:space="preserve">
     <value>La suma MD5 de FFmpeg.exe no ha sido guardada todavía.</value>
@@ -574,9 +568,6 @@
     <value>Cambiar entre el filtro nativo y el filtro de vídeo para unir ficheros.</value>
   </data>
   <data name="concat_vid_help" xml:space="preserve">
-    <value>Este filtro permite unir vídeos con diferentes características. Mejora la compatibilidad, pero requiere que audio y video sean recodificados. El campo de parámetros puede quedar en blanco. NOTA: Solo para ficheros de vídeo.</value>
-  </data>
-  <data name="concat_vid_help1" xml:space="preserve">
     <value>Este filtro permite unir vídeos con diferentes características. Mejora la compatibilidad, pero requiere que audio y video sean recodificados. El campo de parámetros puede quedar en blanco. NOTA: Solo para ficheros de vídeo.</value>
   </data>
   <data name="conc_comp" xml:space="preserve">
@@ -700,9 +691,6 @@
     <value>Eliminar preset actual</value>
   </data>
   <data name="demuxer_help" xml:space="preserve">
-    <value>En este modo, los ficheros de audio/vídeo se pueden copiar sin codificar, siempre que tengan las mismas características (tamaño, codec, etc.). NOTA: No todos los formatos de salida admiten copia de flujos. Si surgen problemas de codificación o reproducción, sería necesario recodificar.</value>
-  </data>
-  <data name="demuxer_help1" xml:space="preserve">
     <value>En este modo, los ficheros de audio/vídeo se pueden copiar sin codificar, siempre que tengan las mismas características (tamaño, codec, etc.). NOTA: No todos los formatos de salida admiten copia de flujos. Si surgen problemas de codificación o reproducción, sería necesario recodificar.</value>
   </data>
   <data name="dest_err" xml:space="preserve">
@@ -1103,18 +1091,6 @@
   </data>
   <data name="fail_2ndp" xml:space="preserve">
     <value>La prueba de codificación falló con los parámetros de la fase 2</value>
-  </data>
-  <data name="ffp_del" xml:space="preserve">
-    <value>El fichero ffprobe.exe fue borrado, el programa no funcionará.</value>
-  </data>
-  <data name="ffp_not" xml:space="preserve">
-    <value>El fichero seleccionado no es ffprobe.exe</value>
-  </data>
-  <data name="ffp_not_f" xml:space="preserve">
-    <value>FFprobe.exe no se encontró en la ruta de la aplicación. ¿Desea localizarlo y copiarlo en la ruta del programa?</value>
-  </data>
-  <data name="ffp_ren" xml:space="preserve">
-    <value>El fichero ffprobe.exe fue renombrado, el programa no funcionará.</value>
   </data>
   <data name="ffs" xml:space="preserve">
     <value>Se detectaron procesos ffmpeg.</value>
@@ -1746,9 +1722,6 @@
   <data name="mux_abort" xml:space="preserve">
     <value>Multiplexado abortado</value>
   </data>
-  <data name="mux_abort1" xml:space="preserve">
-    <value>Multiplexado fue abortado.</value>
-  </data>
   <data name="mux_Err1" xml:space="preserve">
     <value>Error multiplexando audio e imagen</value>
   </data>
@@ -1908,14 +1881,8 @@
   <data name="no_concat_ef" xml:space="preserve">
     <value>No hay fichero inicial o final</value>
   </data>
-  <data name="no_concat_ef1" xml:space="preserve">
-    <value>No hay fichero inicial o final</value>
-  </data>
   <data name="no_ffmpeg" xml:space="preserve">
     <value>El ejecutable ffmpeg.exe no fue encontrado. Localice o descárguelo.</value>
-  </data>
-  <data name="no_ffprobe" xml:space="preserve">
-    <value>El ejecutable ffprobe.exe no fue encontrado. Reinicie o reinstale la aplicación.</value>
   </data>
   <data name="no_file" xml:space="preserve">
     <value>Ningún elemento seleccionado</value>
@@ -3574,15 +3541,6 @@
   <data name="yt_url_sh" xml:space="preserve">
     <value>El enlace de YouTube es demasiado corto.</value>
   </data>
-  <data name="mon_ing1" xml:space="preserve">
-    <value>Monitorizando carpeta</value>
-  </data>
-  <data name="Paste_any_URL1" xml:space="preserve">
-    <value>Pegar enlace</value>
-  </data>
-  <data name="path_iparam1" xml:space="preserve">
-    <value>Añadir fichero de entrada</value>
-  </data>
   <data name="try_d_again" xml:space="preserve">
     <value>Puede intentarlo nuevamente o descargar y copiar el archivo a la ubicación de la aplicación.</value>
   </data>
@@ -3681,5 +3639,11 @@
   </data>
   <data name="end_of" xml:space="preserve">
     <value>Fin de</value>
+  </data>
+  <data name="down_deno" xml:space="preserve">
+    <value>Aviso: Deno.exe es requerido para la descarga de algunos enlaces de YouTube. Por favor descárguelo en la carpeta de aplicación para evitar errores</value>
+  </data>
+  <data name="members_only1" xml:space="preserve">
+    <value>Los vídeos exclusivos para miembros requieren información de sesión. Use el selector de cookies de navegador apropiado.</value>
   </data>
 </root>

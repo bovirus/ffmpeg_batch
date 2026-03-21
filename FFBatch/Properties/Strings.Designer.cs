@@ -88,6 +88,15 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Abort download.
+        /// </summary>
+        internal static string abort_down {
+            get {
+                return ResourceManager.GetString("abort_down", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Abort encoding.
         /// </summary>
         internal static string abort_enc {
@@ -466,6 +475,15 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a File had already been downloaded..
+        /// </summary>
+        internal static string already_down {
+            get {
+                return ResourceManager.GetString("already_down", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Some list items were already encoded and are not in status.
         /// </summary>
         internal static string already_encoded {
@@ -835,15 +853,6 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a to avoid opossible overwritings..
-        /// </summary>
-        internal static string avoid_overw1 {
-            get {
-                return ResourceManager.GetString("avoid_overw1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Jobs Multiplexing complete.
         /// </summary>
         internal static string b_mux_c {
@@ -894,15 +903,6 @@ namespace FFBatch.Properties {
         internal static string batch_concat_msg {
             get {
                 return ResourceManager.GetString("batch_concat_msg", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Batch concatenation is enabled, but no initial or end files were selected. Please choose either one of them or disable this setting..
-        /// </summary>
-        internal static string batch_concat_msg1 {
-            get {
-                return ResourceManager.GetString("batch_concat_msg1", resourceCulture);
             }
         }
         
@@ -1231,7 +1231,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a You can check log file on main tab for more error information..
+        ///   Busca una cadena traducida similar a You can check log file for more error information..
         /// </summary>
         internal static string check_log {
             get {
@@ -1483,15 +1483,6 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a This filter allows to join videos with different qualities, it improves compatibility but it requires audio and video to be re-encoded. Parameters field can be left blank. NOTE: Only video files allowed..
-        /// </summary>
-        internal static string concat_vid_help1 {
-            get {
-                return ResourceManager.GetString("concat_vid_help1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Confirm action.
         /// </summary>
         internal static string conf_act {
@@ -1627,7 +1618,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Image cover.
+        ///   Busca una cadena traducida similar a Cover image.
         /// </summary>
         internal static string cover_mkv {
             get {
@@ -1870,15 +1861,6 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a In this mode audio/video files can be stream copied, provided they share qualities (size, codec, bitrate). NOTE: Not all containers are supported for stream copy. If playback issues occur or files are not joined, re-encoding may be required..
-        /// </summary>
-        internal static string demuxer_help1 {
-            get {
-                return ResourceManager.GetString("demuxer_help1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Destination folder could not be created. Ensure it is a writable path..
         /// </summary>
         internal static string dest_err {
@@ -1933,6 +1915,15 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a If you consider preset looks valid, you can enable &quot;Do not try preset&quot; and retry the operation..
+        /// </summary>
+        internal static string dis_try_try {
+            get {
+                return ResourceManager.GetString("dis_try_try", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Display URL streams.
         /// </summary>
         internal static string dis_url_streams {
@@ -1983,6 +1974,15 @@ namespace FFBatch.Properties {
         internal static string down_com {
             get {
                 return ResourceManager.GetString("down_com", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Warning: Deno.exe is required for downloading some YouTube videos. Please copy it at application folder if you experience compatibility issues. .
+        /// </summary>
+        internal static string down_deno {
+            get {
+                return ResourceManager.GetString("down_deno", resourceCulture);
             }
         }
         
@@ -2055,6 +2055,15 @@ namespace FFBatch.Properties {
         internal static string download {
             get {
                 return ResourceManager.GetString("download", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Download settings.
+        /// </summary>
+        internal static string download_settings {
+            get {
+                return ResourceManager.GetString("download_settings", resourceCulture);
             }
         }
         
@@ -2379,6 +2388,15 @@ namespace FFBatch.Properties {
         internal static string end_log {
             get {
                 return ResourceManager.GetString("end_log", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a End of.
+        /// </summary>
+        internal static string end_of {
+            get {
+                return ResourceManager.GetString("end_of", resourceCulture);
             }
         }
         
@@ -3220,42 +3238,6 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a FFprobe executable file was deleted. Application will not work..
-        /// </summary>
-        internal static string ffp_del {
-            get {
-                return ResourceManager.GetString("ffp_del", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Selected file is not ffprobe.exe..
-        /// </summary>
-        internal static string ffp_not {
-            get {
-                return ResourceManager.GetString("ffp_not", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a FFprobe.exe was not found in application path. Do you want to find it and copy it to application folder?.
-        /// </summary>
-        internal static string ffp_not_f {
-            get {
-                return ResourceManager.GetString("ffp_not_f", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a FFprobe executable file was renamed. Application will not work..
-        /// </summary>
-        internal static string ffp_ren {
-            get {
-                return ResourceManager.GetString("ffp_ren", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a FFmpeg processes running were detected..
         /// </summary>
         internal static string ffs {
@@ -3688,6 +3670,15 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a frame.
+        /// </summary>
+        internal static string frame {
+            get {
+                return ResourceManager.GetString("frame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Frame size.
         /// </summary>
         internal static string frame_size {
@@ -3733,20 +3724,11 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Merry Christmas and Happy New Year.
+        ///   Busca una cadena traducida similar a Merry Christmas and Happy New Year!.
         /// </summary>
         internal static string happy_y {
             get {
                 return ResourceManager.GetString("happy_y", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Happy New Year.
-        /// </summary>
-        internal static string happy_y1 {
-            get {
-                return ResourceManager.GetString("happy_y1", resourceCulture);
             }
         }
         
@@ -3927,6 +3909,15 @@ namespace FFBatch.Properties {
         internal static string imgs {
             get {
                 return ResourceManager.GetString("imgs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Check it if you experience slow application startup..
+        /// </summary>
+        internal static string improve_start {
+            get {
+                return ResourceManager.GetString("improve_start", resourceCulture);
             }
         }
         
@@ -4408,6 +4399,15 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a log.
+        /// </summary>
+        internal static string log {
+            get {
+                return ResourceManager.GetString("log", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Logging is disabled.
         /// </summary>
         internal static string log_dis {
@@ -4561,6 +4561,24 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Map attachments.
+        /// </summary>
+        internal static string map_attach {
+            get {
+                return ResourceManager.GetString("map_attach", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Map metadata.
+        /// </summary>
+        internal static string map_meta {
+            get {
+                return ResourceManager.GetString("map_meta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Map stream.
         /// </summary>
         internal static string map_str {
@@ -4696,11 +4714,29 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Videos for members only require session information. Please select a session cookies browser..
+        /// </summary>
+        internal static string members_only1 {
+            get {
+                return ResourceManager.GetString("members_only1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Metadata.
         /// </summary>
         internal static string Metadata {
             get {
                 return ResourceManager.GetString("Metadata", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Minimize.
+        /// </summary>
+        internal static string minimize {
+            get {
+                return ResourceManager.GetString("minimize", resourceCulture);
             }
         }
         
@@ -4782,15 +4818,6 @@ namespace FFBatch.Properties {
         internal static string mon_ing {
             get {
                 return ResourceManager.GetString("mon_ing", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Monitoring folder.
-        /// </summary>
-        internal static string mon_ing1 {
-            get {
-                return ResourceManager.GetString("mon_ing1", resourceCulture);
             }
         }
         
@@ -4921,6 +4948,15 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a multi-file.
+        /// </summary>
+        internal static string multi_file {
+            get {
+                return ResourceManager.GetString("multi_file", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a MULTIMEDIA INFORMATION (FULL REPORT).
         /// </summary>
         internal static string multi_full {
@@ -4971,6 +5007,15 @@ namespace FFBatch.Properties {
         internal static string multi_vid {
             get {
                 return ResourceManager.GetString("multi_vid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Multimedia.
+        /// </summary>
+        internal static string multimed {
+            get {
+                return ResourceManager.GetString("multimed", resourceCulture);
             }
         }
         
@@ -5034,15 +5079,6 @@ namespace FFBatch.Properties {
         internal static string mux_abort {
             get {
                 return ResourceManager.GetString("mux_abort", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Multiplexing aborted..
-        /// </summary>
-        internal static string mux_abort1 {
-            get {
-                return ResourceManager.GetString("mux_abort1", resourceCulture);
             }
         }
         
@@ -5317,15 +5353,6 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a No initial or end files.
-        /// </summary>
-        internal static string no_concat_ef1 {
-            get {
-                return ResourceManager.GetString("no_concat_ef1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a No file was selected..
         /// </summary>
         internal static string no_f_sel {
@@ -5340,15 +5367,6 @@ namespace FFBatch.Properties {
         internal static string no_ffmpeg {
             get {
                 return ResourceManager.GetString("no_ffmpeg", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a FFprobe executable file was not found. Restart or reinstall application..
-        /// </summary>
-        internal static string no_ffprobe {
-            get {
-                return ResourceManager.GetString("no_ffprobe", resourceCulture);
             }
         }
         
@@ -5371,7 +5389,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Sin ficheros.
+        ///   Busca una cadena traducida similar a No files.
         /// </summary>
         internal static string no_files {
             get {
@@ -6397,15 +6415,6 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Paste internet link.
-        /// </summary>
-        internal static string Paste_any_URL1 {
-            get {
-                return ResourceManager.GetString("Paste_any_URL1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Paste M3u URL.
         /// </summary>
         internal static string Paste_M3u_URL {
@@ -6424,7 +6433,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Paste YouTube URL.
+        ///   Busca una cadena traducida similar a Add YouTube URL.
         /// </summary>
         internal static string Paste_YouTube_URL {
             get {
@@ -6474,15 +6483,6 @@ namespace FFBatch.Properties {
         internal static string path_iparam {
             get {
                 return ResourceManager.GetString("path_iparam", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a Add input file to parameters.
-        /// </summary>
-        internal static string path_iparam1 {
-            get {
-                return ResourceManager.GetString("path_iparam1", resourceCulture);
             }
         }
         
@@ -7000,7 +7000,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a &quot;Pre-input seeking selected in Batch processing tab is incorrect. Change it or reset it by double-clicking on it&quot;.
+        ///   Busca una cadena traducida similar a Pre-input seeking selected in Batch processing tab is incorrect. Change it or reset it by double-clicking on it.
         /// </summary>
         internal static string pre_input4 {
             get {
@@ -7315,7 +7315,16 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Quick file listing dramatically improves file loading time, but it comes with some constraints:.
+        ///   Busca una cadena traducida similar a Quick startup.
+        /// </summary>
+        internal static string quick_ena {
+            get {
+                return ResourceManager.GetString("quick_ena", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Quick file listing dramatically improves file loading time. It comes with these changes:.
         /// </summary>
         internal static string quick_f_m {
             get {
@@ -7324,7 +7333,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Total remaining time is not available, and total progress displays only the encoded files count..
+        ///   Busca una cadena traducida similar a Files duration is obtained in the background. If encoding is started before it finishes, total remaining time is not available, and total progress displays only the encoded files count..
         /// </summary>
         internal static string quick_f_m2 {
             get {
@@ -7342,7 +7351,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a File features (duration, size) are only guessed during encoding. If they are available, individual progress is displayed. If not, only success/error status will be displayed at the end..
+        ///   Busca una cadena traducida similar a Individual progress is displayed if duration is obtained. If not, only success/error status will be displayed at the end..
         /// </summary>
         internal static string quick_f_m4 {
             get {
@@ -7702,6 +7711,24 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Incompatible characters [,&apos;] for ffmpeg filters found in file path. Those characters could cause errors..
+        /// </summary>
+        internal static string ren_chars_p {
+            get {
+                return ResourceManager.GetString("ren_chars_p", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Would you like to rename them replacing conflicting characters?.
+        /// </summary>
+        internal static string ren_chars_ren {
+            get {
+                return ResourceManager.GetString("ren_chars_ren", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Incompatible characters [,&apos;] for ffmpeg filter found in filename. Those filenames could cause errors..
         /// </summary>
         internal static string ren_chars1 {
@@ -7855,7 +7882,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Rest to factory defaults.
+        ///   Busca una cadena traducida similar a Reset to factory defaults.
         /// </summary>
         internal static string Reset_to_factory_defaults {
             get {
@@ -8274,6 +8301,15 @@ namespace FFBatch.Properties {
         internal static string selkf {
             get {
                 return ResourceManager.GetString("selkf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sequential.
+        /// </summary>
+        internal static string sequential {
+            get {
+                return ResourceManager.GetString("sequential", resourceCulture);
             }
         }
         
@@ -8962,6 +8998,15 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Summary.
+        /// </summary>
+        internal static string summary {
+            get {
+                return ResourceManager.GetString("summary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Sunset time cannot be later than sunrise..
         /// </summary>
         internal static string sunset1 {
@@ -9079,6 +9124,15 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a time.
+        /// </summary>
+        internal static string time {
+            get {
+                return ResourceManager.GetString("time", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Wrong time format. Please use a 00:00:00.000 time format..
         /// </summary>
         internal static string time_bad {
@@ -9178,11 +9232,20 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a The included ffmpeg.exe in the application is safe and MD5 checksum is validated on every startup..
+        ///   Busca una cadena traducida similar a Do this if you trust ffmpeg.exe used by application..
         /// </summary>
         internal static string tip4 {
             get {
                 return ResourceManager.GetString("tip4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a If application takes a long time to start, you can try disabling visual styles, using the chekbox below..
+        /// </summary>
+        internal static string tip5 {
+            get {
+                return ResourceManager.GetString("tip5", resourceCulture);
             }
         }
         
@@ -9466,7 +9529,7 @@ namespace FFBatch.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Try with con FFmpeg.
+        ///   Busca una cadena traducida similar a Try with FFmpeg.
         /// </summary>
         internal static string try_ff2 {
             get {
@@ -10074,6 +10137,15 @@ namespace FFBatch.Properties {
         internal static string vf_crop_multi2 {
             get {
                 return ResourceManager.GetString("vf_crop_multi2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Only one -vf parameter is supported for batch subtitles. You can use several filters separated by comma..
+        /// </summary>
+        internal static string vff {
+            get {
+                return ResourceManager.GetString("vff", resourceCulture);
             }
         }
         
