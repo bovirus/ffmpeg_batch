@@ -30,16 +30,22 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form8));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txt_name = new System.Windows.Forms.TextBox();
             this.btn_close = new System.Windows.Forms.Button();
             this.txt_file = new System.Windows.Forms.TextBox();
             this.dg_streams = new System.Windows.Forms.DataGridView();
+            this.image_streams = new System.Windows.Forms.ImageList(this.components);
+            this.btn_select = new System.Windows.Forms.Button();
+            this.pic_yout = new System.Windows.Forms.PictureBox();
+            this.pic_wait_1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.img_full = new System.Windows.Forms.ImageList(this.components);
             this.Column3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,11 +54,7 @@
             this.Codec = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Res_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_bitrate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.image_streams = new System.Windows.Forms.ImageList(this.components);
-            this.btn_select = new System.Windows.Forms.Button();
-            this.pic_yout = new System.Windows.Forms.PictureBox();
-            this.pic_wait_1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.col_vaudio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dg_streams)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_yout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_wait_1)).BeginInit();
@@ -98,68 +100,13 @@
             this.Column4,
             this.Codec,
             this.Res_p,
-            this.col_bitrate});
+            this.col_bitrate,
+            this.col_vaudio});
             resources.ApplyResources(this.dg_streams, "dg_streams");
             this.dg_streams.MultiSelect = false;
             this.dg_streams.Name = "dg_streams";
             this.dg_streams.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column3.FillWeight = 25F;
-            resources.ApplyResources(this.Column3, "Column3");
-            this.Column3.Image = ((System.Drawing.Image)(resources.GetObject("Column3.Image")));
-            this.Column3.Name = "Column3";
-            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Column6
-            // 
-            resources.ApplyResources(this.Column6, "Column6");
-            this.Column6.Name = "Column6";
-            // 
-            // Column1
-            // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column2
-            // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.Column2, "Column2");
-            this.Column2.Name = "Column2";
-            // 
-            // Column4
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle3;
-            resources.ApplyResources(this.Column4, "Column4");
-            this.Column4.Name = "Column4";
-            // 
-            // Codec
-            // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Codec.DefaultCellStyle = dataGridViewCellStyle4;
-            resources.ApplyResources(this.Codec, "Codec");
-            this.Codec.Name = "Codec";
-            // 
-            // Res_p
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Res_p.DefaultCellStyle = dataGridViewCellStyle5;
-            resources.ApplyResources(this.Res_p, "Res_p");
-            this.Res_p.Name = "Res_p";
-            // 
-            // col_bitrate
-            // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.col_bitrate.DefaultCellStyle = dataGridViewCellStyle6;
-            resources.ApplyResources(this.col_bitrate, "col_bitrate");
-            this.col_bitrate.Name = "col_bitrate";
+            this.dg_streams.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_streams_CellContentClick);
             // 
             // image_streams
             // 
@@ -192,6 +139,74 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            // 
+            // img_full
+            // 
+            this.img_full.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("img_full.ImageStream")));
+            this.img_full.TransparentColor = System.Drawing.Color.Transparent;
+            this.img_full.Images.SetKeyName(0, "video_icon_24.png");
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column3.FillWeight = 25F;
+            resources.ApplyResources(this.Column3, "Column3");
+            this.Column3.Image = ((System.Drawing.Image)(resources.GetObject("Column3.Image")));
+            this.Column3.Name = "Column3";
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Column6
+            // 
+            resources.ApplyResources(this.Column6, "Column6");
+            this.Column6.Name = "Column6";
+            // 
+            // Column1
+            // 
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle7;
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle8;
+            resources.ApplyResources(this.Column2, "Column2");
+            this.Column2.Name = "Column2";
+            // 
+            // Column4
+            // 
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle9;
+            resources.ApplyResources(this.Column4, "Column4");
+            this.Column4.Name = "Column4";
+            // 
+            // Codec
+            // 
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Codec.DefaultCellStyle = dataGridViewCellStyle10;
+            resources.ApplyResources(this.Codec, "Codec");
+            this.Codec.Name = "Codec";
+            // 
+            // Res_p
+            // 
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Res_p.DefaultCellStyle = dataGridViewCellStyle11;
+            resources.ApplyResources(this.Res_p, "Res_p");
+            this.Res_p.Name = "Res_p";
+            // 
+            // col_bitrate
+            // 
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.col_bitrate.DefaultCellStyle = dataGridViewCellStyle12;
+            resources.ApplyResources(this.col_bitrate, "col_bitrate");
+            this.col_bitrate.Name = "col_bitrate";
+            // 
+            // col_vaudio
+            // 
+            resources.ApplyResources(this.col_vaudio, "col_vaudio");
+            this.col_vaudio.Name = "col_vaudio";
             // 
             // Form8
             // 
@@ -231,6 +246,7 @@
         public System.Windows.Forms.PictureBox pic_yout;
         private System.Windows.Forms.PictureBox pic_wait_1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ImageList img_full;
         private System.Windows.Forms.DataGridViewImageColumn Column3;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -239,5 +255,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Codec;
         private System.Windows.Forms.DataGridViewTextBoxColumn Res_p;
         private System.Windows.Forms.DataGridViewTextBoxColumn col_bitrate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn col_vaudio;
     }
 }

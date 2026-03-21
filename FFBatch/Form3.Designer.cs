@@ -609,7 +609,8 @@
             resources.GetString("combo_lang.Items4"),
             resources.GetString("combo_lang.Items5"),
             resources.GetString("combo_lang.Items6"),
-            resources.GetString("combo_lang.Items7")});
+            resources.GetString("combo_lang.Items7"),
+            resources.GetString("combo_lang.Items8")});
             resources.ApplyResources(this.combo_lang, "combo_lang");
             this.combo_lang.Name = "combo_lang";
             this.combo_lang.SelectedIndexChanged += new System.EventHandler(this.combo_lang_SelectedIndexChanged);
@@ -860,10 +861,10 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.pic_info2);
-            this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Controls.Add(this.pic_ff_ok);
             this.groupBox4.Controls.Add(this.pic_ver);
+            this.groupBox4.Controls.Add(this.pic_info2);
+            this.groupBox4.Controls.Add(this.button2);
             this.groupBox4.Controls.Add(this.lbl_ff_latest);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Controls.Add(this.btn_update);

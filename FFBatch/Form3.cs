@@ -1011,88 +1011,8 @@ namespace FFBatch
                 pic_ff_ok.Left = lbl_ff_latest.Left + lbl_ff_latest.Text.Length + 60;
             }
             foreach (Control ct in this.Controls) ct.AccessibleDescription = ct.Text;
-
         }
 
-        private void boton_load_bck_Click(object sender, System.EventArgs e)
-        {
-            String path_log_backup = String.Empty;
-            if (is_portable == false)
-            {
-                path_log_backup = System.IO.Path.Combine(Environment.GetEnvironmentVariable("appdata"), "FFBatch") + "\\" + "ff_batch_bck.ini";
-            }
-            else
-            {
-                path_log_backup = port_path + "ff_batch_bck_portable.ini";
-            }
-
-            if (!File.Exists(path_log_backup))
-            {
-                MessageBox.Show(FFBatch.Properties.Strings.no_backup, FFBatch.Properties.Strings.error, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                List<string> conf_presets = new List<string>();
-                int i = 0;
-                foreach (String line in File.ReadLines(path_log_backup))
-                {
-                    if (i > 7) conf_presets.Add(line);
-                    i = i + 1;
-                }
-                Rtxt.Lines = conf_presets.ToArray();
-                MessageBox.Show(FFBatch.Properties.Strings.backup_suc, FFBatch.Properties.Strings.back_l, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
-        private void boton_ok_ff_Click(object sender, System.EventArgs e)
-        {
-            Form.ActiveForm.Close();
-            this.Enabled = true;
-        }
-
-        private void boton_save_ff_Click(object sender, System.EventArgs e)
-        {
-            String path_log_file = System.IO.Path.Combine(Environment.GetEnvironmentVariable("appdata"), "FFBatch") + "\\" + "ff_batch.ini";
-            String path_log_backup = System.IO.Path.Combine(Environment.GetEnvironmentVariable("appdata"), "FFBatch") + "\\" + "ff_batch_bck.ini";
-            if (is_portable == true)
-            {
-                path_log_file = port_path + "ff_batch.ini";
-                path_log_backup = port_path + "ff_batch_bck.ini";
-            }
-
-            try
-            {
-                File.Delete(path_log_backup);
-                File.Copy(path_log_file, path_log_backup);
-            }
-            catch
-            {
-                var a = MessageBox.Show(FFBatch.Properties.Strings.back_cont, FFBatch.Properties.Strings.error, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                if (a == DialogResult.No) return;
-            }
-            reload_config = true;
-
-            String[] lines = System.IO.File.ReadAllLines(path_log_file);
-            List<string> conf_presets = new List<string>();
-            int i = 0;
-            foreach (String line in lines)
-            {
-                if (i < 8) conf_presets.Add(line);
-                i = i + 1;
-            }
-            foreach (String line in Rtxt.Lines)
-            {
-                conf_presets.Add(line);
-            }
-
-            File.WriteAllLines(path_log_file, conf_presets.ToArray());
-            Form.ActiveForm.Close();
-        }
-
-        private void CopyAction(object sender, EventArgs e)
-        {
-            if (Rtxt.SelectedText != String.Empty) Clipboard.SetText(Rtxt.SelectedText);
-        }
 
         private void check_open_output_CheckedChanged(object sender, EventArgs e)
         {
@@ -1499,19 +1419,28 @@ namespace FFBatch
 
             if (combo_lang.SelectedIndex == 2)
             {
+                //MessageBox.Show("Translation is not available yet.");
+                //combo_lang.SelectedIndex = 0;
+                lang_set = "de";
+                Settings.Default.app_lang = "de";
+                hide_pics();
+            }
+
+            if (combo_lang.SelectedIndex == 3)
+            {
                 lang_set = "fr";
                 Settings.Default.app_lang = "fr";
                 hide_pics();
             }
 
-            if (combo_lang.SelectedIndex == 3)
+            if (combo_lang.SelectedIndex == 4)
             {
                 lang_set = "it";
                 Settings.Default.app_lang = "it";
                 hide_pics();
             }
                         
-            if (combo_lang.SelectedIndex == 4)
+            if (combo_lang.SelectedIndex == 5)
             {
                 lang_set = "pl";
                 Settings.Default.app_lang = "pl";
@@ -1519,7 +1448,7 @@ namespace FFBatch
 
             }
 
-            if (combo_lang.SelectedIndex == 5)
+            if (combo_lang.SelectedIndex == 6)
             {
                 lang_set = "pt-BR";
                 Settings.Default.app_lang = "pt-BR";
@@ -1527,15 +1456,15 @@ namespace FFBatch
 
             }
 
-            if (combo_lang.SelectedIndex == 6)
+            if (combo_lang.SelectedIndex == 7)
             {
                 lang_set = "zh-Hans";
                 Settings.Default.app_lang = "zh-Hans";
                 show_pics();
             }
-            if (combo_lang.SelectedIndex == 7)
+            if (combo_lang.SelectedIndex == 8)
             {
-                lang_set = "zh-Hans";
+                lang_set = "ar-EG";
                 Settings.Default.app_lang = "ar-EG";
                 show_pics();
             }            

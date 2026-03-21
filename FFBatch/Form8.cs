@@ -122,15 +122,36 @@ namespace FFBatch
                 yt.Start();
                 String result = String.Empty;
                 String stream = "";
+                Boolean start_parse = false;
+
                 while (!yt.StandardOutput.EndOfStream)
                 {
                     stream = yt.StandardOutput.ReadLine();
-                    //MessageBox.Show(stream);
+                    if (stream.Contains("ID") && stream.Contains("EXT") && stream.Contains("RESOLUTION") && stream.Contains("FPS")) start_parse = true;
+                    
                     result = result + stream;
-                    if (stream != null && stream != String.Empty && !stream.ToLower().Contains("format code") && !stream.ToLower().Contains("downloading webpage") && !stream.ToLower().Contains("available formats") && !stream.ToLower().Contains("downloading mpd manifest") && !stream.ToLower().Contains("downloading m3u8 information") && !stream.ToLower().Contains("downloading android player api json") && !stream.ToLower().Contains("available formats") && !stream.ToLower().Contains("downloading mpd manifest") && !stream.ToLower().Contains("downloading m3u8 information") && !stream.ToLower().Contains("id  ext  resolution fps") && !stream.ToLower().Contains("--------") && !stream.ToLower().Contains("[youtube]") && !stream.Contains("VCODEC"))
+                    //if (stream != null && stream != String.Empty && !stream.ToLower().Contains("format code") && !stream.ToLower().Contains("downloading webpage") && !stream.ToLower().Contains("available formats") && !stream.ToLower().Contains("downloading mpd manifest") && !stream.ToLower().Contains("downloading m3u8 information") && !stream.ToLower().Contains("downloading android player api json") && !stream.ToLower().Contains("available formats") && !stream.ToLower().Contains("downloading mpd manifest") && !stream.ToLower().Contains("downloading m3u8 information") && !stream.ToLower().Contains("id  ext  resolution fps") && !stream.ToLower().Contains("--------") && !stream.ToLower().Contains("[youtube]") && !stream.Contains("VCODEC") )
+                    
+                    if (start_parse == true)
                     {
+                        if (!stream.Contains("ID") && !stream.Contains("EXT") && !stream.Contains("RESOLUTION") && !stream.Contains("FPS") && !stream.Contains("--------"))
+                        {
+                            //if (stream.ToLower().Contains("audio only")) MessageBox.Show("Audio" + Environment.NewLine + stream);
+                            //else if (stream.ToLower().Contains("video only")) MessageBox.Show("Video" + Environment.NewLine + stream);
+                            //else if (stream.ToLower().Contains("images")) MessageBox.Show("Images" + Environment.NewLine + stream);
+                            //else MessageBox.Show("Full Video-Audio" + Environment.NewLine + stream);
+
+                        Boolean audio_only = false;
+                        Boolean video_only = false;
+                        Boolean images_only = false;
+                        Boolean full_video = false;
                         try
                         {
+                            if (stream.ToLower().Contains("audio only")) audio_only = true;
+                            else if (stream.ToLower().Contains("video only")) video_only = true;
+                            else if (stream.ToLower().Contains("images")) images_only = true;
+                            else full_video = true;
+
                             dg_streams.Invoke(new MethodInvoker(delegate
                             {
                                 String[] split = stream.Split(' ');
@@ -160,13 +181,13 @@ namespace FFBatch
                                 }
 
                                 String[] split2 = codec.Split(' ');
-                                
+
                                 foreach (String str in split2)
                                 {
                                     if (str.Length > 0)
-                                    {                                        
+                                    {
                                         if (str.Substring(str.Length - 1, 1).ToLower() == "p")
-                                        {                                            
+                                        {
                                             codec = codec.Replace(str, "");
                                             break;
                                         }
@@ -182,13 +203,30 @@ namespace FFBatch
                                 if (codec.Contains("av01")) codec = "AV1";
                                 if (codec.Contains("vp09")) codec = "VP9";
 
-                                if (stream.ToLower().Contains("audio only"))
+                                if (audio_only == true)
                                 {
-                                    dg_streams.Rows.Add(image_streams.Images[1], false, stream.Substring(0, 3).TrimEnd(), stream.Substring(4, 4).TrimEnd(), "Audio", codec.Replace("audio only", "").TrimStart(' '), "-", Bitrate);
+                                    dg_streams.Rows.Add(image_streams.Images[1], false, stream.Substring(0, 3).TrimEnd(), stream.Substring(4, 4).TrimEnd(), "Audio", codec.Replace("audio only", "").TrimStart(' '), "-", Bitrate, "-");
                                 }
                                 else
                                 {
-                                    dg_streams.Rows.Add(image_streams.Images[0], false, stream.Substring(0, 3).TrimEnd(), stream.Substring(4, 4).TrimEnd(), resol.ToString(), codec.Replace("video only", "").TrimStart(' '), resol.Substring(resol.LastIndexOf("x") + 1, resol.Length - resol.LastIndexOf("x") - 1) + "p", Bitrate);
+                                    if (video_only == true || images_only == true) dg_streams.Rows.Add(img_full.Images[0], false, stream.Substring(0, 3).TrimEnd(), stream.Substring(4, 4).TrimEnd(), resol.ToString(), codec.Replace("video only", "").TrimStart(' '), resol.Substring(resol.LastIndexOf("x") + 1, resol.Length - resol.LastIndexOf("x") - 1) + "p", Bitrate, "-");
+                                    if (full_video == true)
+                                    {
+                                        String audio_str = "-";
+                                        if (stream.Contains("mp4a"))
+                                        {
+                                            String[] splitf = stream.Split(' ');
+                                            foreach (string s in split)
+                                            {
+                                                if (s.Contains("mp4a"))
+                                                {
+                                                    audio_str = s;
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                        dg_streams.Rows.Add(image_streams.Images[0], false, stream.Substring(0, 3).TrimEnd(), stream.Substring(4, 4).TrimEnd(), resol.ToString(), codec.Replace("video only", "").TrimStart(' '), resol.Substring(resol.LastIndexOf("x") + 1, resol.Length - resol.LastIndexOf("x") - 1) + "p", Bitrate, audio_str);
+                                    }
                                 }
                             }));
                         }
@@ -197,6 +235,7 @@ namespace FFBatch
                             dg_streams.Rows.Add(image_streams.Images[1], false, Properties.Strings.error, "-", "-");
                         }
                     }
+                }
                 }
 
                 yt.WaitForExit();
@@ -270,6 +309,19 @@ namespace FFBatch
                 MessageBox.Show(FFBatch.Properties.Strings.no_chk_str);
                 return;
             }
+            Boolean full_v = false;
+
+            foreach (DataGridViewRow row in dg_streams.Rows)
+            {
+                if (Convert.ToBoolean(row.Cells[1].Value) == true && row.Cells[8].Value.ToString() != "-")
+                {
+                    format_ID = row.Cells[2].Value.ToString();
+                    full_v= true;
+                    break;             
+                }
+            }
+
+            if (full_v == true) this.Close();
 
             foreach (DataGridViewRow row in dg_streams.Rows)
             {
@@ -314,6 +366,25 @@ namespace FFBatch
         private void Form8_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (working == true) e.Cancel = true;
+        }
+
+        private void dg_streams_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex == -1) return;
+            if (dg_streams.Rows[e.RowIndex].Cells[8].Value.ToString() != "-")
+            {
+                foreach (DataGridViewRow row in dg_streams.Rows) row.Cells[1].Value = false;
+            }
+            else
+            {
+                foreach (DataGridViewRow row in dg_streams.Rows)
+                {                    
+                    if (row.Cells[1].Value.ToString() == "True" && row.Cells[8].Value.ToString() != "-")
+                    {
+                        row.Cells[1].Value = false;
+                    }
+                }
+            }
         }
     }
 }
