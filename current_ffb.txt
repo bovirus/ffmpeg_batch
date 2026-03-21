@@ -1,8 +1,6 @@
-﻿3.2.5
-• Added speed factor in encoding wizard to speed up video by a factor of up to 100x.
-• Image frame extraction wizard: Added by scene detection algorithm.
-• Fixed images to video wizards errors when using decimal numbers.
-• Fixed stream multiplex: all tracks being set as default, and changing default state setting more than one default track.
-• Fixed some potential inconsistencies and unexpected messages when running automatic encoding.
-• Fixed incomplete custom columns data when using Quick file listing.
-• Other minor cosmetic corrections and runtime errors prevented.
+﻿3.2.8
+• Tested with ffmpeg.exe 8.1.
+• Fixed wizard parameter for hevc_amf (usage instead of preset), and fixed minor general wizard bug (duplicating video parameters).
+• Added yt-dlp session cookie browser selector, to allow downloading YouTube videos requiring user login (members only videos, etc).
+• Video downloading is now always attempted even if url validation displays errors.
+• yt-dl additional parameters field is now saved and used with Quick Download.
