@@ -139,7 +139,7 @@ namespace FFBatch
                 
         private void read_presets()
         {
-            String url_presets = "https://raw.githubusercontent.com/eibol/ffmpeg_batch/master/presets.md";
+            String url_presets = "https://raw.githubusercontent.com/eibols/ffmpeg_batch/master/presets.md";
             String dsc = "";
             String pre_i = "";
             String param = "";

@@ -50,7 +50,8 @@ namespace FFBatch
             resources.GetString("combo_lang.Items4"),
             resources.GetString("combo_lang.Items5"),
             resources.GetString("combo_lang.Items6"),
-            resources.GetString("combo_lang.Items7")});
+            resources.GetString("combo_lang.Items7"),
+            resources.GetString("combo_lang.Items8")});
             resources.ApplyResources(this.combo_lang, "combo_lang");
             this.combo_lang.Name = "combo_lang";
             this.combo_lang.SelectedIndexChanged += new System.EventHandler(this.combo_lang_SelectedIndexChanged);
