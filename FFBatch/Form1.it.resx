@@ -16569,4 +16569,19 @@
         AfEBgAEBAR8B+AEAAQ8B/wHzAcABAwE/AfgB4AF/Av8B4AEHCw==
 </value>
   </data>
+  <data name="Combo_sub_lang_mux.Items56" xml:space="preserve">
+    <value>Tailandese (tha)</value>
+  </data>
+  <data name="btn_log_subs.Text" xml:space="preserve">
+    <value>File registro</value>
+  </data>
+  <data name="Combo_sub_lang_mux.Items37" xml:space="preserve">
+    <value>Tailandese (tha)</value>
+  </data>
+  <data name="txt_deno.Text" xml:space="preserve">
+    <value>Attenzione: per scaricare i video di YouTube è necessario Deno.exe. Per mantenere attiva questa funzionalità copialo nella cartella dell'applicazione.</value>
+  </data>
+  <data name="Combo_sub_lang_mux.Items6" xml:space="preserve">
+    <value>Bengalese (ben)</value>
+  </data>
 </root>
