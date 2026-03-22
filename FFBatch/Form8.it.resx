@@ -2183,4 +2183,7 @@
   <data name="col_bitrate.HeaderText" xml:space="preserve">
     <value>Bitrate</value>
   </data>
+  <data name="col_vaudio.HeaderText" xml:space="preserve">
+    <value>Stream audio</value>
+  </data>
 </root>
